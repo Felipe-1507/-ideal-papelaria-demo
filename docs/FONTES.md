@@ -50,3 +50,9 @@ A fachada fechada deixou de aparecer na seção de história. Ela foi substituí
 ## Correção das fotografias repetidas — 06/11/2026
 
 A história da loja passou a usar uma imagem exclusiva do balcão (Instagram, instagram-17.jpg → atendimento-na-ideal.webp). A foto de leitura ficou somente na seção do Instagram. A miniatura do início foi substituída por foto-27.jpg da Solutudo (pequenas-felicidades.webp), evitando repetir as canetas da vitrine. O terceiro card do Instagram agora usa instagram-15.jpg (opcoes-na-loja.webp), evitando repetir a mochila do catálogo. Todas são fotografias reais previamente publicadas pela Ideal.
+
+## Fachada aberta fornecida por Felipe — 06/11/2026
+
+A seção de história agora usa `assets/fachada-aberta-ideal.webp`, substituindo a fotografia do balcão. Felipe forneceu três capturas do Google Maps/Street View; a captura frontal aproximada foi tratada com a ferramenta integrada de edição de imagens por IA, para retirar a interface e ajustar enquadramento e exposição. É uma imagem derivada da captura fornecida, não uma nova fotografia feita na loja. O crédito Google permanece na imagem e na legenda com link para o Maps. O enquadramento preserva a imagem inteira em todas as larguras, sem encobrir entrada ou letreiro. A foto é exclusiva dessa seção.
+
+O registro da edição e o prompt utilizado estão em [FACHADA-EDICAO.md](FACHADA-EDICAO.md). Os apontamentos anteriores acima registram as versões anteriores da demonstração.

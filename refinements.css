@@ -81,9 +81,14 @@
 .printer-paper { color: #242322; }
 .printer-paper span { font-size: 24px; font-weight: 700; line-height: 1.05; }
 .story-copy > p:not(.eyebrow) { max-width: 460px; }
-.store-photo { min-height: 0; height: 640px; align-self: center; }
-.store-photo img { object-position: 50% 40%; }
-.photo-caption { font-size: 14px; line-height: 1.5; background: #242322f2; }
+.store-photo { min-height: 0; height: auto; align-self: center; }
+.store-photo img { display: block; height: auto; aspect-ratio: 4 / 3; object-fit: contain; object-position: center; border-radius: 5px 5px 0 0; }
+.photo-caption { position: static; display: grid; gap: 5px; padding: 14px 18px; font-size: 14px; line-height: 1.5; background: #242322; border-radius: 0 0 5px 5px; }
+.photo-caption > span { display: flex; align-items: center; gap: 8px; }
+.photo-caption svg { flex-shrink: 0; }
+.photo-caption a { width: fit-content; color: #e3e4e8; font-size: 14px; letter-spacing: 0; text-decoration: underline; text-underline-offset: 3px; }
+.photo-caption a:hover { color: #fff; }
+.photo-caption a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
 .story-rating p, .story-rating a { font-size: 14px; line-height: 1.6; }
 .story-rating .stars { font-size: 14px; }
 .inspiration > span { font-size: 14px; line-height: 1.5; background: linear-gradient(transparent, #111e); }
@@ -108,7 +113,6 @@
   .service-card h3 { font-size: 32px; }
   .service-card > p { max-width: calc(100% - 32px); padding-right: 12px; }
   .service-card > a { right: 20px; bottom: 20px; }
-  .store-photo { min-height: 0; height: 580px; }
 }
 @media (max-width: 900px) {
   .list-layout { gap: 35px; }
@@ -118,7 +122,6 @@
   .service-card > p { max-width: 450px; padding-right: 50px; }
   .service-card h3 { font-size: 36px; }
   .story-layout { grid-template-columns: 1fr; gap: 35px; }
-  .store-photo { height: 480px; }
   .story-copy h2 { font-size: 46px; }
   .story-rating { gap: 15px; }
   .hero-actions .button { font-size: 14px; }
@@ -161,8 +164,6 @@
   .service-card h3 { font-size: 34px; }
   .service-card > p { font-size: 16px; max-width: 100%; padding-right: 32px; }
   .service-card > a { width: 44px; height: 44px; right: 18px; bottom: 24px; }
-  .store-photo { min-height: 0; height: 380px; }
-  .store-photo img { object-position: 50% 45%; }
   .photo-caption { font-size: 14px; padding: 12px; }
   .story-copy > p:not(.eyebrow) { font-size: 16px; }
   .story-rating { gap: 20px; }
@@ -187,5 +188,4 @@
   .hero-actions .button { padding-inline: 16px; }
   .service-card h3 { font-size: 30px; }
   .contact-phone { gap: 12px; font-size: 27px; }
-  .store-photo { height: 340px; }
 }
