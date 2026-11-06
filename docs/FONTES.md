@@ -14,7 +14,7 @@ Consulta: 06/11/2026. Empresa: Ideal Papelaria, Itapetininga/SP.
 
 O levantamento completo e as URLs de origem estão no diretório irmão `ideal-papelaria-research`, em `image-sources.json`, `instagram-images.json` e `maps-images.json`. As cópias da página são locais, otimizadas para WebP para evitar dependência de links CDN temporários.
 
-| Arquivo em `dist/assets` | Origem |
+| Arquivo em `assets` | Origem |
 |---|---|
 | ideal-logo.webp | Avatar atual do Instagram, instagram-00.jpg |
 | ideias-em-cores.webp | Galeria Solutudo, foto-37.jpg |

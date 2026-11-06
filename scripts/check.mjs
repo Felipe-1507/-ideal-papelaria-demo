@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const dist = path.join(root, 'dist');
+const dist = root;
 const fail = message => { throw new Error(message); };
 const html = fs.readFileSync(path.join(dist,'index.html'),'utf8');
 const app = fs.readFileSync(path.join(dist,'app.js'),'utf8');

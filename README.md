@@ -1,64 +1,49 @@
 # Ideal Papelaria — demonstração
 
-Landing page estática em HTML, CSS e JavaScript, com fotos reais da Ideal Papelaria de Itapetininga.
+**Site:** https://ideal.felipeferreira.dev
 
-**Endereço configurado nos arquivos:** https://ideal.felipeferreira.dev
+Landing page em HTML, CSS e JavaScript, com identidade e fotografias reais da Ideal Papelaria de Itapetininga.
 
-**Repositório:** https://github.com/Felipe-1507/-ideal-papelaria-demo
+## Publicação
 
-A publicação usa GitHub Pages com GitHub Actions. O DNS público já foi conferido apontando `ideal.felipeferreira.dev` para `felipe-1507.github.io`. O domínio só ficará ativo depois de habilitar Pages, associar o hostname nas configurações e concluir a emissão do certificado HTTPS.
+O GitHub Pages publica diretamente a **branch `main`, pasta `/` (raiz)**. Cada alteração nessa branch atualiza a demonstração. O arquivo `.nojekyll` mantém os arquivos estáticos sem transformação de Jekyll.
 
-## Ativar a primeira publicação
+O domínio `ideal.felipeferreira.dev` está associado pelo arquivo `CNAME` e pelas configurações do Pages. O DNS público aponta para `felipe-1507.github.io`. O HTTPS foi verificado em06/11/2026.
 
-1. Abra https://github.com/Felipe-1507/-ideal-papelaria-demo/settings/pages .
-2. Em **Build and deployment → Source**, selecione **GitHub Actions**.
-3. Em **Custom domain**, salve `ideal.felipeferreira.dev`.
-4. Na aba Actions, execute ou reexecute **Publicar demonstração no GitHub Pages**. Após a configuração inicial, cada alteração na branch `main` publica o site automaticamente.
-5. Aguarde a validação do DNS e a disponibilidade do certificado. Ative **Enforce HTTPS** quando disponível e confira o endereço antes de enviar ao cliente.
+Não há workflow de publicação paralelo. `.github/workflows/check.yml` apenas verifica os arquivos; o deploy fica a cargo da publicação nativa do Pages. Manter **Settings → Pages → Source: Deploy from a branch → main → / (root)** para este formato.
 
-O arquivo `dist/CNAME` registra o hostname pretendido, mas o GitHub ignora esse arquivo para configurar o domínio quando a publicação usa Actions. O cadastro em **Settings → Pages → Custom domain** continua necessário.
-
-## Estrutura
+## Arquivos
 
 ```
-dist/                       Arquivos publicados
-  index.html
-  style.css
-  app.js
-  assets/
-  CNAME
-  robots.txt
-scripts/
-  check.mjs                 Verifica arquivos e JavaScript
-  serve.mjs                 Servidor local
-.github/workflows/
-  check.yml                 Verificação de mudanças
-  pages.yml                 Publicação no GitHub Pages
-docs/                       Pesquisa e orientações comerciais
-wrangler.jsonc              Alternativa de publicação no Cloudflare Pages
+index.html                  Página e contatos
+style.css                   Estilos e layout responsivo
+app.js                      Vitrine e lista de orçamento
+assets/                     Fotografias e fontes locais
+CNAME                       ideal.felipeferreira.dev
+.nojekyll                   Publicação estática
+scripts/check.mjs           Verificação dos arquivos
+scripts/serve.mjs           Servidor local
+docs/                       Pesquisa, DNS e roteiro comercial
 ```
 
 Não há instalação de dependências nem compilação. `npm run check` verifica arquivos e JavaScript; `npm run dev` abre http://127.0.0.1:4174.
 
-O campo `path: dist` do workflow garante que somente os arquivos do site sejam publicados, não os roteiros e documentos do repositório.
+## Funcionalidade
 
-## Demonstração e conteúdo
+O cliente filtra categorias, seleciona itens, escreve sua lista e abre uma mensagem no WhatsApp oficial `551532732891`. Ele revisa e envia a mensagem no próprio WhatsApp. A lista fica salva apenas no navegador.
 
-O site é uma demonstração pública para apresentação à empresa. Tem `noindex` no HTML e identifica o conceito no rodapé. O `robots.txt` permite leitura para que os mecanismos de busca encontrem a instrução. Isso não representa controle de acesso por senha.
+Os produtos são exemplos divulgados pela empresa, com disponibilidade a confirmar. Não há preços, estoque, prazo de entrega, checkout, backend ou analytics simulados.
 
-A vitrine apresenta categorias e exemplos de produtos divulgados pela empresa. O cliente seleciona itens, escreve sua lista e abre uma mensagem no WhatsApp oficial `551532732891`. A mensagem só é enviada quando o cliente confirmar no WhatsApp. A lista fica salva apenas no navegador.
+A página é um conceito para apresentação e mantém `noindex` no HTML. O `robots.txt` permite leitura para que os mecanismos de busca encontrem essa instrução. Isso não é controle de acesso por senha. O arquivo `_headers` é usado apenas na alternativa Cloudflare, pois o GitHub Pages não aplica essas diretivas.
 
-Não há preços, estoque ou prazo de entrega simulados. Não há checkout, backend ou analytics implementado. O arquivo `_headers` é usado na alternativa Cloudflare; o GitHub Pages não aplica essas diretivas. O `noindex` do HTML continua presente em ambos.
+## Documentação
 
-## Documentos
-
-- [DNS da GoDaddy](docs/DNS-GODADDY.md)
-- [Fontes e fotografias](docs/FONTES.md)
+- [DNS e hospedagem](docs/DNS-GODADDY.md)
+- [Fontes e fotos](docs/FONTES.md)
 - [Roteiro comercial](docs/ROTEIRO-COMERCIAL.md)
 
-## Fontes técnicas
+Na entrega definitiva, revisar conteúdo com a empresa, atualizar domínio e metadados, retirar a identificação de demonstração e configurar indexação conforme combinado.
 
-- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
-- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+## Alternativa Cloudflare Pages
 
-O `wrangler.jsonc` foi mantido como alternativa para Cloudflare Pages. Nessa alternativa, associar o domínio no Cloudflare e apontar o CNAME ao hostname `*.pages.dev` realmente provisionado. Não habilitar os dois provedores para o mesmo hostname simultaneamente.
+O `wrangler.jsonc` foi mantido como opção de migração. O diretório estático agora é a raiz do projeto. Antes de trocar de hospedagem, associar o domínio no novo provedor e atualizar o CNAME ao hostname efetivamente criado; o DNS atual pertence à publicação do GitHub Pages.

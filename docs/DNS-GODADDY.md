@@ -1,40 +1,43 @@
-# DNS da apresentação
+# Hospedagem da demonstração
 
-Hostname: **ideal.felipeferreira.dev**.
+Endereço: **https://ideal.felipeferreira.dev**.
 
-O DNS público foi conferido em 06/11/2026 e já apresenta:
+## DNS verificado em06/11/2026
 
-| Campo | Valor |
+| Campo na GoDaddy | Valor |
 |---|---|
 | Tipo | CNAME |
-| Nome / Host na GoDaddy | `ideal` |
-| Valor / Aponta para | `felipe-1507.github.io` |
+| Nome / Host | `ideal` |
+| Valor | `felipe-1507.github.io` |
 
-Esse apontamento atende ao GitHub Pages. Não é necessário mudar os nameservers do domínio principal. Na GoDaddy, o nome é apenas `ideal`, sem o domínio completo, e o valor é um hostname sem `https://` ou caminho.
+O DNS permanece na GoDaddy. Não é necessário alterar os nameservers, o domínio raiz ou os registros de e-mail.
 
-## Associação no GitHub
+## GitHub Pages
 
-1. Abra https://github.com/Felipe-1507/-ideal-papelaria-demo/settings/pages .
-2. Em **Build and deployment → Source**, selecione **GitHub Actions**.
-3. Em **Custom domain**, salve `ideal.felipeferreira.dev`.
-4. Execute ou reexecute o workflow de publicação.
-5. Aguarde a emissão do certificado e ative **Enforce HTTPS** quando disponível.
+Repositório: https://github.com/Felipe-1507/-ideal-papelaria-demo
 
-Em `.dev`, o navegador exige HTTPS. O endereço só estará pronto para a apresentação depois que o certificado estiver válido.
+Configuração de publicação:
 
-O arquivo `dist/CNAME` não substitui a configuração do domínio em Settings quando a publicação usa GitHub Actions.
+- **Source:** Deploy from a branch
+- **Branch:** main
+- **Pasta:** / (root)
+- **Custom domain:** ideal.felipeferreira.dev
+- **HTTPS:** usar o certificado válido emitido pelo GitHub; manter Enforce HTTPS ativado quando disponível.
 
-## Verificar
+O arquivo `CNAME` fica na raiz da branch publicada. O `index.html`, os estilos, JavaScript e assets também ficam na raiz, alinhados à configuração ativa do Pages. O workflow `check.yml` valida os arquivos, sem fazer outro deploy.
+
+## Conferência
 
 ```
 Resolve-DnsName ideal.felipeferreira.dev -Type CNAME
 curl.exe -I https://ideal.felipeferreira.dev
 ```
 
-Conferir certificado, resposta bem-sucedida, imagens, filtros e links de WhatsApp. Os registros do domínio raiz, `www` e e-mail não precisam ser alterados para esta demonstração.
+Em `.dev`, o navegador exige HTTPS. Conferir o certificado e a resposta do site antes de apresentar.
 
-## Fontes
+Fontes técnicas:
 
+- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 - https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 - https://www.godaddy.com/pt-br/help/adicionar-um-registro-cname-19236
 - https://www.registry.google/domains/dev/
