@@ -46,3 +46,7 @@ Felipe informou que utiliza o número **+55 15 99855-5587** para solicitar papel
 ## Revisão de apresentação e legibilidade — 06/11/2026
 
 A fachada fechada deixou de aparecer na seção de história. Ela foi substituída por uma fotografia real do interior já divulgada no Instagram (assets/vida-na-ideal.webp), com enquadramento em CSS e legenda compatível. Uma fotografia de fachada aberta ainda depende de captura real. A mochila da vitrine agora usa foto-03.jpg (assets/volta-as-aulas.webp). O card de guache promocional foi substituído por foto-21.jpg da galeria Solutudo, convertida para assets/primeiras-descobertas.webp. Não houve geração de imagens fictícias da loja ou produtos.
+
+## Correção das fotografias repetidas — 06/11/2026
+
+A história da loja passou a usar uma imagem exclusiva do balcão (Instagram, instagram-17.jpg → atendimento-na-ideal.webp). A foto de leitura ficou somente na seção do Instagram. A miniatura do início foi substituída por foto-27.jpg da Solutudo (pequenas-felicidades.webp), evitando repetir as canetas da vitrine. O terceiro card do Instagram agora usa instagram-15.jpg (opcoes-na-loja.webp), evitando repetir a mochila do catálogo. Todas são fotografias reais previamente publicadas pela Ideal.
