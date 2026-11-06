@@ -1,0 +1,18 @@
+name: Verificar site estático
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Conferir arquivos e JavaScript
+        run: node scripts/check.mjs

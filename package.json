@@ -1,0 +1,11 @@
+{
+  "name": "ideal-papelaria-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demonstração de landing page da Ideal Papelaria em ideal.felipeferreira.dev",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
