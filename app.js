@@ -4,9 +4,9 @@
     {id:'cadernos',name:'Cadernos & organização',description:'Uma página nova para suas ideias.',category:'escola',label:'NA ESCOLA',image:'cadernos.webp',alt:'Caderno de discos e itens de escrita divulgados pela Ideal'},
     {id:'estojos',name:'Estojos que acompanham',description:'Seu pequeno universo, bem guardado.',category:'organizacao',label:'NA SUA ROTINA',image:'estojos.webp',alt:'Estojos rosa e bege disponíveis nas publicações da Ideal'},
     {id:'fineliners',name:'Uma cor para cada ideia',description:'Canetas fineliners para criar.',category:'criatividade',label:'PARA CRIAR',image:'fineliners.webp',alt:'Conjunto de canetas fineliners coloridas divulgado pela Ideal'},
-    {id:'mochilas',name:'Novos caminhos',description:'Mochilas para acompanhar a rotina.',category:'escola',label:'NA ESCOLA',image:'mochila.webp',alt:'Mochila xadrez verde divulgada pela Ideal'},
+    {id:'mochilas',name:'Novos caminhos',description:'Mochilas para acompanhar a rotina.',category:'escola',label:'NA ESCOLA',image:'volta-as-aulas.webp',alt:'Mochila azul, caderno e materiais escolares fotografados pela Ideal'},
     {id:'canetas',name:'Detalhes que inspiram',description:'Canetas e acessórios em tons pastel.',category:'organizacao',label:'NA SUA ROTINA',image:'canetas-pastel.webp',alt:'Estojo azul e canetas pastel divulgados pela Ideal'},
-    {id:'guache',name:'Criatividade em movimento',description:'Tintas e guache Acrilex.',category:'criatividade',label:'PARA CRIAR',image:'guache-acrilex.webp',alt:'Tintas e guache bastão da Acrilex divulgados pela Ideal'}
+    {id:'descobertas',name:'Pequenas descobertas',description:'Livros, lápis e novas possibilidades.',category:'criatividade',label:'PARA CRIAR',image:'primeiras-descobertas.webp',alt:'Livro infantil e lápis de cor fotografados sobre uma mesa pela Ideal'}
   ];
   const selected = new Set();
   const textarea = document.querySelector('#list-text');

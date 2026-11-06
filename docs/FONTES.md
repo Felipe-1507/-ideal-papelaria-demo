@@ -42,3 +42,7 @@ O logo roxo antigo do Guia Mais Prático foi evitado, pois diverge do avatar atu
 ## Atualização do contato de atendimento — 06/11/2026
 
 Felipe informou que utiliza o número **+55 15 99855-5587** para solicitar papelaria à loja pela empresa onde trabalha. A versão pública do site passou a usar esse número em todos os links de WhatsApp e na mensagem de orçamento. O telefone fixo **(15) 3273-2891** permanece como opção de ligação. A referência anterior do Instagram foi preservada acima como registro da pesquisa; o novo contato foi informado pelo usuário, sem envio de mensagem de teste à loja.
+
+## Revisão de apresentação e legibilidade — 06/11/2026
+
+A fachada fechada deixou de aparecer na seção de história. Ela foi substituída por uma fotografia real do interior já divulgada no Instagram (assets/vida-na-ideal.webp), com enquadramento em CSS e legenda compatível. Uma fotografia de fachada aberta ainda depende de captura real. A mochila da vitrine agora usa foto-03.jpg (assets/volta-as-aulas.webp). O card de guache promocional foi substituído por foto-21.jpg da galeria Solutudo, convertida para assets/primeiras-descobertas.webp. Não houve geração de imagens fictícias da loja ou produtos.
