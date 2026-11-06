@@ -38,3 +38,7 @@ O logo roxo antigo do Guia Mais Prático foi evitado, pois diverge do avatar atu
 - Não há preço, promoção, estoque, prazo, frete ou depoimento inventado.
 - A nota do Google corresponde à consulta, não a um sistema de avaliações do site.
 - Fontes Bricolage Grotesque e DM Sans obtidas do Google Fonts e hospedadas localmente.
+
+## Atualização do contato de atendimento — 06/11/2026
+
+Felipe informou que utiliza o número **+55 15 99855-5587** para solicitar papelaria à loja pela empresa onde trabalha. A versão pública do site passou a usar esse número em todos os links de WhatsApp e na mensagem de orçamento. O telefone fixo **(15) 3273-2891** permanece como opção de ligação. A referência anterior do Instagram foi preservada acima como registro da pesquisa; o novo contato foi informado pelo usuário, sem envio de mensagem de teste à loja.

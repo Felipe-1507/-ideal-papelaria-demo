@@ -73,7 +73,7 @@
     if(selected.size)lines.push('\nTenho interesse em:',...items.filter(p=>selected.has(p.id)).map(p=>`• ${p.name}`));
     if(text)lines.push('\nMinha lista e detalhes:',text);
     lines.push('\nPodem me ajudar?');
-    const url='https://wa.me/551532732891?text='+encodeURIComponent(lines.join('\n'));
+    const url='https://wa.me/5515998555587?text='+encodeURIComponent(lines.join('\n'));
     window.open(url,'_blank','noopener,noreferrer');
     toast('Sua lista está pronta. Revise e envie no WhatsApp.');
   });

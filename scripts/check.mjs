@@ -19,7 +19,7 @@ const productImages=[...app.matchAll(/image:'([^']+)'/g)].map(m=>m[1]);
 for(const image of productImages)if(!fs.existsSync(path.join(dist,'assets',image)))fail('Imagem ausente: '+image);
 if(!html.includes('name="robots" content="noindex, nofollow"'))fail('Prévia deve manter noindex.');
 if(!html.includes('https://ideal.felipeferreira.dev/assets/'))fail('Metadado social não usa o domínio de demonstração.');
-if(!app.includes('https://wa.me/551532732891?text='))fail('Número do WhatsApp oficial alterado.');
+if(!app.includes('https://wa.me/5515998555587?text='))fail('Número do WhatsApp de atendimento alterado.');
 if(fs.readFileSync(path.join(dist,'CNAME'),'utf8').trim()!=='ideal.felipeferreira.dev')fail('Domínio CNAME divergente.');
 const syntax=spawnSync(process.execPath,['--check',path.join(dist,'app.js')],{encoding:'utf8'});
 if(syntax.status!==0)fail(syntax.stderr);

@@ -30,7 +30,7 @@ Não há instalação de dependências nem compilação. `npm run check` verific
 
 ## Funcionalidade
 
-O cliente filtra categorias, seleciona itens, escreve sua lista e abre uma mensagem no WhatsApp oficial `551532732891`. Ele revisa e envia a mensagem no próprio WhatsApp. A lista fica salva apenas no navegador.
+O cliente filtra categorias, seleciona itens, escreve sua lista e abre uma mensagem no WhatsApp de atendimento `5515998555587`. Ele revisa e envia a mensagem no próprio WhatsApp. A lista fica salva apenas no navegador.
 
 Os produtos são exemplos divulgados pela empresa, com disponibilidade a confirmar. Não há preços, estoque, prazo de entrega, checkout, backend ou analytics simulados.
 
